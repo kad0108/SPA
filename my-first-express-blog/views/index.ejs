@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include header %>
+    <% pubs.forEach(function(pub, index){ %>
+    	<div class="item">
+    		<h2><a href="#"><%= pub.title %></a></h2>
+			<p class="info">
+				作者：<a href="#"><%= pub.name %></a> |
+				日期：<%= pub.time.minute %>
+			</p>
+			<p><%- pub.doc %></p>
+    	</div>
+    <% }) %>
+    <%- include footer %>
+  </body>
+</html>

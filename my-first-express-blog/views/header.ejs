@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+    	<h1><%= title %></h1>
+    </header>
+    <nav>
+    	<span><a href="/" title="Home">Home</a></span>
+      <% if(user){ %>
+        <span><a href="/publish" title="publish">Publish</a></span>
+        <span><a href="/logout" title="logotu">Logout</a></span>
+      <% } else { %>
+    	 <span><a href="/login" title="login">Login</a></span>
+    	 <span><a href="/reg" title="Register">Register</a></span>
+      <% } %>
+    </nav>
+    <article>
+      <% if(success){ %>
+        <div><%= success %></div>
+      <% } %>
+      <% if(error){ %>
+        <div><%= error %></div>
+      <% } %>
