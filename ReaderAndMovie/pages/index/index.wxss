@@ -1,0 +1,28 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  background: #b3d4db;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.username {
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.motto {
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  font-size: 22rpx;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5%;
+  text-align: center;
+  line-height: 80rpx;
+  color: #405f80;
+}
